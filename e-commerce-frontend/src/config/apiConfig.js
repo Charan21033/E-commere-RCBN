@@ -1,6 +1,6 @@
 import  axios  from "axios"
 
-export const API_BSE_URL="http://localhost:5454"
+export const API_BSE_URL="https://rcbn-ecommerce.onrender.com"
 const jwt =localStorage.getItem("jwt")
 
 
