@@ -31,7 +31,7 @@ const OrderCard = ({ item , orderDate}) => {
                   
           </Grid>
           <Grid item xs={2}>
-            <p className='font-thin text-green-600' >₹{item.product?.price}/-</p>
+            <p className='font-thin text-green-600' >₹{item.product?. discountedPrice}/-</p>
             <p className='text-xs'>Ordered on: {formatDate(orderDate)}</p>
           </Grid>
           <Grid item xs={4}>
