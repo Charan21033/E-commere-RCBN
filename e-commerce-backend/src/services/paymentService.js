@@ -19,7 +19,7 @@ const createPaymentLink = async(orderId)=>{
                 email:true
             },
             reminder_enable:true,
-            callback_url: `https://rcbn-ecommerce.onrender.com/payment/${orderId}`,
+            callback_url: `https://main--rcbn-enterprise.netlify.app/payment/${orderId}`,
             callback_method: "get",
         };
 
