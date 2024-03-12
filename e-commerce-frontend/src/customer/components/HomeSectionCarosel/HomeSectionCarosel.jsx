@@ -26,10 +26,11 @@ const slideNext = () => {
 
 // const syncActiveIndex=({item})=> { return setActiveIndex(item)};
 
-  const items = data?.content?.slice(0,10).map((item) => 
-    <HomeSectionCard product={item} />
+  const items = data.slice(0,10).map((item,index) => 
+  
+    <HomeSectionCard key={index} product={item} />  
   );
-
+  // console.log("product",)
  // Custom navigation buttons
  const renderPrevButton = ({ isDisabled }) => (
   <Button

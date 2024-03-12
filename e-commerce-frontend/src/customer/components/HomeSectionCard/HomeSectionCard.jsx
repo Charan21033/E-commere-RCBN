@@ -3,7 +3,7 @@ import {useNavigate} from "react-router-dom"
 
 const HomeSectionCard = ({product}) => {
   const navigate =useNavigate();
-   const handleClick =  ()=> navigate(`/product/${product._id}`)
+   const handleClick =  ()=> navigate(`/${product.topLavelCategory}/${product.secondLavelCategory}/${product.thirdLavelCategory}`)
      
    
 

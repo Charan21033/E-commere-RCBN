@@ -19,8 +19,8 @@ const createPaymentLink = async(orderId)=>{
                 email:true
             },
             reminder_enable:true,
-            callback_url: `https://main--rcbn-enterprise.netlify.app/payment/${orderId}`,
-            callback_method: "get",
+            callback_url: `https://rcbn-enterprise.netlify.app/payment/${orderId}`,
+            callback_method: "get", 
         };
 
         const paymentLink = await razorpay.paymentLink.create(paymentLinkRequest)
